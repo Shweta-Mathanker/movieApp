@@ -5,6 +5,7 @@ import axios from '../Utils/axios';
 import Header from './partials/Header';
 import HorizontalCards from './partials/HorizontalCards';
 import DropDown from './partials/DropDown';
+import Loading from './Loading';
 
 const Home = () => {
     document.title="Movie-App || homepage";
@@ -56,7 +57,7 @@ const Home = () => {
         <HorizontalCards data={trending} />
     </div>
     </>
-    ): <h1>Loading</h1>
+    ): <Loading/>
    
 }
 
